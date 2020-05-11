@@ -1,0 +1,23 @@
+* {
+    /* height & width now includes border & padding */
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    font-family: Helvetica;
+    display: grid;
+    height:85vh;
+}
+
+#board {
+    background-color:pink;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+header {
+    text-align: center;
+    background-color: limegreen;
+    height: 15vh;
+}

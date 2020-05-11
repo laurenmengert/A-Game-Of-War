@@ -3,11 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A Game Of War</title>
+    <link rel="cardstylesheet" type="images/css" href="css/cardstarter.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/deck.js"></script>
     <script defer src="js/main.js"></script>
+    <title>A Game Of War</title>
 </head>
 <body>
-    
+    <header>LET'S PLAY WAR!</header>
+    <main id=board>
+        <div>
+            <div id=player1>Humans?</div>
+            <div>SCORE:</div>
+        </div>
+        <div>
+            <div id=player2>Robots?</div>
+            <div>SCORE:</div>
+        </div>
+    </main>
+    <footer>
+        <button id="war">WAR!</button>
+        <button id="reset">Reset Game</button>
+    </footer>
 </body>
 </html>
