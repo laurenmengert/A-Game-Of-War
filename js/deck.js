@@ -1,7 +1,7 @@
 const deck = [
     {
         name: "card dA",
-        value: 14
+        value: 14,
     },
     {
         name: "card dK",
