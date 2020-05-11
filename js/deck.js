@@ -52,159 +52,159 @@ const deck = [
         value: 2
     },
     {
-        name: "card dA",
+        name: "card hA",
         value: 14
     },
     {
-        name: "card dK",
+        name: "card hK",
         value: 13
     },
     {
-        name: "card dQ",
+        name: "card hQ",
         value: 12
     },
     {
-        name: "card dJ",
+        name: "card hJ",
         value: 11
     },
     {
-        name: "card d10",
+        name: "card h10",
         value: 10
     },
     {
-        name: "card d09",
+        name: "card h09",
         value: 9
     },
     {
-        name: "card d08",
+        name: "card h08",
         value: 8
     },
     {
-        name: "card d07",
+        name: "card h07",
         value: 7
     },
     {
-        name: "card d06",
+        name: "card h06",
         value: 6
     },
     {
-        name: "card d05",
+        name: "card h05",
         value: 5
     },
     {
-        name: "card d04",
+        name: "card h04",
         value: 4
     },
     {
-        name: "card d03",
+        name: "card h03",
         value: 3
     },
     {
-        name: "card d02",
+        name: "card h02",
         value: 2
     },
     {
-        name: "card dA",
+        name: "card cA",
         value: 14
     },
     {
-        name: "card dK",
+        name: "card cK",
         value: 13
     },
     {
-        name: "card dQ",
+        name: "card cQ",
         value: 12
     },
     {
-        name: "card dJ",
+        name: "card cJ",
         value: 11
     },
     {
-        name: "card d10",
+        name: "card c10",
         value: 10
     },
     {
-        name: "card d09",
+        name: "card c09",
         value: 9
     },
     {
-        name: "card d08",
+        name: "card c08",
         value: 8
     },
     {
-        name: "card d07",
+        name: "card c07",
         value: 7
     },
     {
-        name: "card d06",
+        name: "card c06",
         value: 6
     },
     {
-        name: "card d05",
+        name: "card c05",
         value: 5
     },
     {
-        name: "card d04",
+        name: "card c04",
         value: 4
     },
     {
-        name: "card d03",
+        name: "card c03",
         value: 3
     },
     {
-        name: "card d02",
+        name: "card c02",
         value: 2
     },
     {
-        name: "card dA",
+        name: "card sA",
         value: 14
     },
     {
-        name: "card dK",
+        name: "card sK",
         value: 13
     },
     {
-        name: "card dQ",
+        name: "card sQ",
         value: 12
     },
     {
-        name: "card dJ",
+        name: "card sJ",
         value: 11
     },
     {
-        name: "card d10",
+        name: "card s10",
         value: 10
     },
     {
-        name: "card d09",
+        name: "card s09",
         value: 9
     },
     {
-        name: "card d08",
+        name: "card s08",
         value: 8
     },
     {
-        name: "card d07",
+        name: "card s07",
         value: 7
     },
     {
-        name: "card d06",
+        name: "card s06",
         value: 6
     },
     {
-        name: "card d05",
+        name: "card s05",
         value: 5
     },
     {
-        name: "card d04",
+        name: "card s04",
         value: 4
     },
     {
-        name: "card d03",
+        name: "card s03",
         value: 3
     },
     {
-        name: "card d02",
+        name: "card s02",
         value: 2
     },
 ]
