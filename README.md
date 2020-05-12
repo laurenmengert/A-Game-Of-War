@@ -4,11 +4,14 @@ While War is a very commonly played card game, the origin of the game is unknown
 
 # Screenshots
 
+![](2020-05-12-17-15-16.png)
+
+
 Screenshots will be entered here once I finish the game
 
 # Technologies Used
 
-The game was created using HTML, CSS and JavaScript.
+This game was created using HTML, CSS and JavaScript.
 
 # Getting Started
 
