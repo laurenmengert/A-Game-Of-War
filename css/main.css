@@ -7,17 +7,54 @@ body {
     margin: 0;
     font-family: Helvetica;
     display: grid;
-    height:85vh;
+    height: 100vh;
+    grid-template-areas: 
+        "header" 
+        "main" 
+        "buttons" 
+        "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 150px 20px;
 }
 
 #board {
     background-color:pink;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-area: main;
 }
 
 header {
+    grid-area: header;
     text-align: center;
     background-color: limegreen;
     height: 15vh;
+}
+
+#buttons {
+    grid-area: buttons;
+    background-color: mediumturquoise;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    font-size: 30px;
+    color: #0000ff;
+    border-radius: 12px;
+}
+
+.btn:hover {
+    background-color: orange;
+}
+
+footer {
+    grid-area: footer;
+    background-color: orange;
+}
+
+.cardBack {
+    background-color: white;
 }

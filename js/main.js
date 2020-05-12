@@ -5,8 +5,8 @@
 /*----- app's state (variables) -----*/
 
 
-let player1 = [];
-let player2 = [];
+const player1 = [];
+const player2 = [];
 let gameOver = false
 let winner;
 
@@ -17,8 +17,8 @@ let winner;
 const boardEl = document.querySelector('#board');
 const player1El = document.querySelector('#player1Pile');
 const player2El = document.querySelector('#player2Pile');
-const p1score = document.querySelector('#player1 .score');
-const p2score = document.querySelector('#player2 .score');
+const p1ScoreEl = document.querySelector('#player1 .score');
+const p2ScoreEl = document.querySelector('#player2 .score');
 
 
 /*----- event listeners -----*/
@@ -30,14 +30,10 @@ document.querySelector("#reset").addEventListener("click", init);
 init();
 
 function init() {
-    
-
-    shuffleCards(deck);
-    dealCards(deck);
-    renderBoard();
+    dealCards(shuffleCards(deck));
 }
 
-//pass "deck" through when you want to call this function?
+//pass "deck" through when you want to call this function
 function shuffleCards(arr) { 
     for(let i = arr.length -1; i > 0; i--) {
         let newPos = Math.floor(Math.random() * (i + 1));
@@ -59,10 +55,6 @@ function dealCards(arr) {
     }
 }
 
-function renderBoard () {
-   
-}
-
 function playRound() { 
     if(!gameOver){
         const card1 = player1.shift();
@@ -70,14 +62,10 @@ function playRound() {
         const bucket = [card1, card2];
         player1El.classList = card1.name;
         player2El.classList = card2.name;
-        p1score.innerHTML = `Total Cards: ${player1.length}`;
-        p2score.innerHTML = `Total Cards: ${player2.length}`;
+        p1ScoreEl.innerHTML = `Total Cards: ${player1.length}`;
+        p2ScoreEl.innerHTML = `Total Cards: ${player2.length}`;
         getWinner(card1, card2, bucket);
     }
-   
-    //const newCard = document.createElement("div");
-    //player1El.appendChild(newCard);
-    
 }
 
 function getWinner(card1, card2, bucket) {
@@ -85,11 +73,21 @@ function getWinner(card1, card2, bucket) {
         console.log('game over');
         gameOver = true;
         return;
-    } if(card1.value > card2.value) {
-        console.log('Player 1 wins!')
-        player1 += bucket; //will this work?
+    } 
+    if(card1.value > card2.value) {
+        console.log('Player 1 wins!') //call function here to display winner
+        player1.push(...bucket);
     } else if(card2.value > card1.value) {
-        console.log('Player 2 wins!');
-        player2 += bucket;
+        console.log('Player 2 wins!'); //call function here to display winner
+        player2.push(...bucket);
+    // } else if(card1.value === card2.value) {
+    //     warMode(bucket);
     }
-}
+    //       //tie logic// call function
+    } console.log(player1);
+    console.log(player2);
+   
+function warMode(bucket) {
+    let card1, card2;
+
+// }
