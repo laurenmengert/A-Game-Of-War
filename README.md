@@ -4,6 +4,8 @@ While War is a very commonly played card game, the origin of the game is unknown
 
 # Screenshots
 
+## Wireframe
+
 ![](2020-05-12-17-15-16.png)
 
 

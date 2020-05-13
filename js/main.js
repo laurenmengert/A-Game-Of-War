@@ -58,39 +58,34 @@ function dealCards(arr) {
 
 function playRound() { 
     if(!gameOver){
-        p1ScoreEl.innerHTML = `Total Cards: ${player1.length}`;
-        p2ScoreEl.innerHTML = `Total Cards: ${player2.length}`;
         const card1 = player1.shift(); //can't use pop
         const card2 = player2.shift();
         bucket.push(card1, card2);
         player1El.classList = card1.name;
         player2El.classList = card2.name;
         getWinner(card1, card2);
+        p1ScoreEl.innerHTML = `Total Cards: ${player1.length}`;
+        p2ScoreEl.innerHTML = `Total Cards: ${player2.length}`;
     }
 }
 
 function getWinner(card1, card2) {
     if((player1.length === 0) || (player2.length === 0)){
-        console.log('game over');
         gameOver = true;
         return;
     } 
     if(card1.value > card2.value) {
-        console.log('Player 1 wins!') //call function here to display winner
         player1.push(...bucket);
         bucket.length = 0;
     } else if(card2.value > card1.value) {
-        console.log('Player 2 wins!'); //call function here to display winner
         player2.push(...bucket);
         bucket.length = 0;
     } else if(card1.value === card2.value) {
-        console.log('THERES A TIE');
+        console.log("THERES A TIE");
         warMode(bucket);
-    }
-    //  console.log(player1);
-    // console.log(player2);
-    console.log(bucket);
-    //       //tie logic// call function
+    } console.log(player1);
+    console.log(player2);
+    
     } 
    
 function warMode() {
