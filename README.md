@@ -1,19 +1,27 @@
 # A Game Of War
 
-While War is a very commonly played card game, the origin of the game is unknown. Although rumoured to be invented by King Arthur, it can be traced back centuries with no difinitive answer. 
+While War is a very commonly played card game, the origin of the game is unknown. Although rumoured to be invented by King Arthur, it can be traced back centuries with no difinitive answer. However, in my own life, it can be traced back to my childhood. I have fond memories of playing War with both family and friends!
+
 
 # Screenshots
 
-## Wireframe
+## When you first load the page
 
-![](2020-05-14-08-24-30.png)
+![](2020-05-14-14-37-14.png)
 
+## When you play the game
 
-Screenshots will be entered here once I finish the game
+![](2020-05-14-14-37-44.png)
+
+## When you enter a tie
+
+![](2020-05-14-14-38-12.png)
+
 
 # Technologies Used
 
 This game was created using HTML, CSS and JavaScript.
+
 
 # Getting Started
 
@@ -25,6 +33,14 @@ The game of War is a simple one. A deck of 52 playing cards is dealt one by one 
 
  **Insert Link Here**
 
+
 # Next Steps
 
-Moving forward, I would add code to make it so the user can visually see when a tie happens. Currently my JavaScript deals with a tie in the proper manner, but does not display anything on the screen other than the increase in cards for the winner of that tie.
+First, I would add code to make it so the user can visually see when a tie happens. Currently my JavaScript deals with a tie in the proper manner, but does not display the 3 cards played on the screen during the tie, it just updates the score with those cards.
+
+Secondly, I would like to add some code that allows a player to enter a tie with less than 4 cards, and be able to play through the tie with whatever amount of cards they have left. As it stands now, the other player is automatically declared the winner if their opponent enters a tie with less than 4 cards.
+Secondly
+
+Lastly, I would like add some responsive design using media queries so that my game can be played on other devices.
+
+

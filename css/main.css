@@ -1,5 +1,4 @@
 * {
-    /* height & width now includes border & padding */
     box-sizing: border-box;
 }
   
@@ -15,30 +14,34 @@ body {
         "buttons" ;
     grid-template-columns: 1fr;
     grid-template-rows: 100px 100px 1fr 250px;
+    background-image: url(../images/Cool\ Robot\ Wallpaper\ 2040\ 1920x1080\ px\ High\ Resolution\ Wallpaper.jpg);
+    background-size: cover;
+    background-attachment: ;
 }
 
 #board {
-    background-color:pink;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-area: main;
     align-items: center;
     justify-content: space-around;
-    ;
+}
 
+#board > div {
+    justify-self: center;
 }
 
 header {
     grid-area: header;
     padding-top: 20px;
     text-align: center;
-    background-color: limegreen;
+    background-color:#1E90FF;
+    color: white;
     font-size: 50px;
 }
 
 #buttons {
     grid-area: buttons;
-    background-color: mediumturquoise;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -54,7 +57,7 @@ header {
 }
 
 .btn:hover {
-    background-color: orange;
+    background-color: #1E90FF;
 }
 
 .cardBack {
@@ -65,7 +68,26 @@ header {
 
 #msg {
     grid-area: h1;
-    background-color: blueviolet;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
+    color: white;
+    padding-top: 50px;
+}
+
+.names {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    background-color: white;
+    width: 110px;
+    font-size: 20px;
+    color: navy;
+}
+
+.score {
+    background-color: white;
+    width: 180px;
+    font-size: 20px;
+    color: navy;
+    padding-left: 5px;
 }
