@@ -5,16 +5,16 @@
   
 body {
     margin: 0;
-    font-family: Helvetica;
+    font-family: 'Orbitron', sans-serif;
     display: grid;
     height: 100vh;
     grid-template-areas: 
         "header" 
+        "h1"
         "main" 
-        "buttons" 
-        "footer";
+        "buttons" ;
     grid-template-columns: 1fr;
-    grid-template-rows: 50px 1fr 150px 20px;
+    grid-template-rows: 100px 100px 1fr 250px;
 }
 
 #board {
@@ -22,13 +22,18 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-area: main;
+    align-items: center;
+    justify-content: space-around;
+    ;
+
 }
 
 header {
     grid-area: header;
+    padding-top: 20px;
     text-align: center;
     background-color: limegreen;
-    height: 15vh;
+    font-size: 50px;
 }
 
 #buttons {
@@ -36,11 +41,13 @@ header {
     background-color: mediumturquoise;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    padding-bottom: 80px;
 }
 
 .btn {
+    font-family: 'Orbitron', sans-serif;
     font-size: 30px;
     color: #0000ff;
     border-radius: 12px;
@@ -50,11 +57,15 @@ header {
     background-color: orange;
 }
 
-footer {
-    grid-area: footer;
-    background-color: orange;
-}
-
 .cardBack {
     background-color: white;
+    border-radius: 8px;
+    height: 230px;
+}
+
+#msg {
+    grid-area: h1;
+    background-color: blueviolet;
+    text-align: center;
+    font-size: 30px;
 }

@@ -5,33 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/cardstarter.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
     <script src="js/deck.js"></script>
     <script defer src="js/main.js"></script>
     <title>A Game Of War</title>
 </head>
 <body>
-    <header>LET'S PLAY WAR!</header>
+    <header>It's Time For WAR!</header>
+    <div id="msg">
+        <h1>hello</h1>
+    </div>
     <main id="board">
-        <div id="player1">
-            <div>Player</div>
-            <div class="score">Total Cards:</div>
+        <div id="player1" class="div">
             <img class="cardBack" src="images/backs/blue.svg" alt="back of card-blue">
-            <div id="player1Pile"></div>
+            <div>HUMANS</div>
+            <div class="score">Total Cards:</div>
         </div>
-        <div id="score1"></div>
-        <div id="score2"></div>
-        <div id="player2">
-            <div>Computer</div>
-            <div class="score">Total Cards:</div>
+        <div id="player1Pile" class="div"></div>
+        <div id="player2Pile" class="div"></div>
+        <div id="player2" class="div">
             <img class="cardBack" src="images/backs/blue.svg" alt="back of card-blue">
-            <div id="player2Pile"></div>
+            <div>ROBOTS</div>
+            <div class="score">Total Cards:</div>
         </div>
     </main>
     <div id="buttons">
         <button id="war" class="btn">WAR!</button>
         <button id="reset" class="btn">Reset Game</button>
     </div>
-    <footer>
-    </footer>
 </body>
-</html>
+</html> 
