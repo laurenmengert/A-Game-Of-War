@@ -7,15 +7,15 @@ While War is a very commonly played card game, the origin of the game is unknown
 
 ## When you first load the page
 
-![](2020-05-14-14-37-14.png)
+![War Game First Loaded](2020-05-14-14-37-14.png)
 
 ## When you play the game
 
-![](2020-05-14-14-37-44.png)
+![War Game Play](2020-05-14-14-37-44.png)
 
 ## When you enter a tie
 
-![](2020-05-14-14-38-12.png)
+![War Game Tie](2020-05-14-14-38-12.png)
 
 
 # Technologies Used
@@ -31,7 +31,7 @@ The game of War is a simple one. A deck of 52 playing cards is dealt one by one 
 
  The first player to gather all 52 cards is the winner. Click below to play!
 
- **Insert Link Here**
+ [Play War!](https://laurenmengert.github.io/A-Game-Of-War/)
 
 
 # Next Steps
