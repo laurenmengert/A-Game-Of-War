@@ -1,18 +1,18 @@
 
 let player1 = [];
 let player2 = [];
-const bucket = [];
+const bucket = []; // the bucket is a temporary array that the players "throw" their cards in so their values can be compared
 let winner;
 
-
-const boardEl = document.querySelector('#board'); //grab the board
-const player1El = document.querySelector('#player1Pile'); //grab the virtual "card pile of p1 and p2"
+// below are my DOM elements
+const boardEl = document.querySelector('#board'); 
+const player1El = document.querySelector('#player1Pile'); 
 const player2El = document.querySelector('#player2Pile');
-const p1ScoreEl = document.querySelector('#player1 .score'); //grab the scores
+const p1ScoreEl = document.querySelector('#player1 .score'); 
 const p2ScoreEl = document.querySelector('#player2 .score');
 const messageEl = document.querySelector('#msg');
 
-
+// below are my event listeners
 document.querySelector("#war").addEventListener("click", playRound);
 document.querySelector("#reset").addEventListener("click", init);
 
@@ -29,10 +29,10 @@ function init() {
     p1ScoreEl.innerHTML = `Total Cards: 26`;
     p2ScoreEl.innerHTML = `Total Cards: 26`;
     messageEl.innerHTML = '';
-    dealCards(shuffleCards(smallDeck));
+    dealCards(shuffleCards(deck));
 }
 
-
+// shuffled using the Fisher Yates algorithm
 function shuffleCards(arr) { 
     for(let i = 0; i < arr.length; i++){
         const newPos = Math.floor(Math.random() * (i + 1));
@@ -43,7 +43,7 @@ function shuffleCards(arr) {
     return arr;
 }
 
-
+// dealt by odd and even indices
 function dealCards(arr) { 
     for(let i = 0; i < arr.length; i++) {
         if(i % 2 === 0){
@@ -53,6 +53,7 @@ function dealCards(arr) {
         }
     }
 }
+
 
 function playRound() { 
     if(!winner){
@@ -79,7 +80,7 @@ function getWinner(card1, card2) {
         bucket.length = 0;
     } else if(card1.value === card2.value) {
         checkCards();
-    }  
+    } //the code below checks for a deck that hits '0' and declares the other player the winner
     if(player1.length === 0) {
         messageEl.innerHTML = 'THE ROBOTS HAVE WON THE WAR!';
         winner = true;
@@ -89,7 +90,8 @@ function getWinner(card1, card2) {
     } 
 }
 
-
+// this function checks to make sure that each player has enough cards to enter 'War'
+// if not, it declares the other player the winner
 function checkCards() {
     if(player1.length < 4) {
         messageEl.innerHTML = 'THE ROBOTS HAVE WON THE WAR!';
@@ -103,7 +105,8 @@ function checkCards() {
     }
 }
    
-
+// war mode adds 3 more cards to the bucket from each players array and then calls playRound
+// to play the 4th card
 function warMode() {
     bucket.push(...player1.splice(0, 3), ...player2.splice(0, 3));
     setTimeout(function(){

@@ -16,7 +16,6 @@ body {
     grid-template-rows: 100px 100px 1fr 250px;
     background-image: url(../images/Cool\ Robot\ Wallpaper\ 2040\ 1920x1080\ px\ High\ Resolution\ Wallpaper.jpg);
     background-size: cover;
-    background-attachment: ;
 }
 
 #board {
