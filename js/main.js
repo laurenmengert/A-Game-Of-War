@@ -57,6 +57,7 @@ function dealCards(arr) {
 
 function playRound() { 
     if(!winner){
+        new Audio('sounds/flip.wav').play();
         const card1 = player1.shift();
         const card2 = player2.shift();
         player1El.classList = card1.name;
@@ -82,9 +83,11 @@ function getWinner(card1, card2) {
         checkCards();
     } //the code below checks for a deck that hits '0' and declares the other player the winner
     if(player1.length === 0) {
+        new Audio('sounds/boo.wav').play();
         messageEl.innerHTML = 'THE ROBOTS HAVE WON THE WAR!';
         winner = true;
     } if (player2.length === 0) {
+        new Audio('sounds/cheer.wav').play();
         messageEl.innerHTML = 'THE HUMANS HAVE WON THE WAR!';
         winner = true;
     } 
@@ -94,9 +97,11 @@ function getWinner(card1, card2) {
 // if not, it declares the other player the winner
 function checkCards() {
     if(player1.length < 4) {
+        new Audio('sounds/boo.wav').play();
         messageEl.innerHTML = 'THE ROBOTS HAVE WON THE WAR!';
         winner = true;
     } else if(player2.length < 4){
+        new Audio('sounds/cheer.wav').play();
         messageEl.innerHTML = 'THE HUMANS HAVE WON THE WAR!';
         winner = true;
     } else {
